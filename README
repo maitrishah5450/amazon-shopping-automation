@@ -1,0 +1,17 @@
+-------------------------------------
+amazon.csv
+
+ASIN, Product Name, Desired Buy Price
+-------------------------------------
+
+
+-------------------------------------
+Flow:
+	1> Opens csv file
+	2> Reqests goes to amazon page
+	3> Create Soup from response
+	4> Extract price from soup
+	5> if Extraced_price <= Desired Buy Price then show notificate & save the same in .txt file else only save details in .txt file
+-------------------------------------
+
+We are using differect user_agents in Step 2 to bypass requests limit
